@@ -31,10 +31,15 @@ Na Access Controller-u uraditi samo prvi put:
 Na OS instalirati root digitalni sertifikat CA tijela (kojeg koristi CA_Manager) kako bi svi sertifikati koje je on potpisao postali Trusted (kopirati CA sertifikat, te ažurirati listu svih CA sertifikata)
 
 Na Access Controller-u podesiti /etc/hosts za:
+
 auth.gw		// adresa AuthGW-a
+
 access.gw	// adresa AccessGW-a
+
 my.ip		// sopstvena privatna IP adresa
+
 dest.srv	// IP adresa ciljnih servisa kojima sistem raspolaže
+
 
 Provjeriti da li su podešavanja IP tabela prazna koristeći komande:
 sudo iptables -t nat -L
