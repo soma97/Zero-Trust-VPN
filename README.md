@@ -3,7 +3,9 @@
 ## Ciljani servisi
 
 Na ciljanim servisima pokrenuti Docker container-e (sudo docker start {container_name}):
+
 MySQL (3306)				// otvaranje MySQL servisa - ujedno ga koristi i AccessController
+
 CA_Manager (8443)			// otvaranje servisa za izdavanje, praćenje i povlačenje digitalnih sertifikata koji je javno dostupan svim klijentima
 
 U direktorijumu http-content pokrenuti komandu:
