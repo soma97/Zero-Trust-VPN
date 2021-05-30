@@ -11,6 +11,12 @@ CA_Manager (8443)			// otvaranje servisa za izdavanje, praćenje i povlačenje d
 U direktorijumu http-content pokrenuti komandu:
 sudo python3 -m http.server 80		// otvaranje HTTP (80) index servisa
 
+U cilju zabrane pristupa simuliranoj privatnoj mrezi (Virtuelna mašina u kojoj se nalaze ciljani servisi):
+
+sudo iptables -A INPUT -s access.ctr -J ACCEPT		// omogućiti ulazni saobraćaj AccessController-u
+sudo iptables -P INPUT DROP							// onemogućiti saobraćaj ostalim uređajima
+
+
 ## AuthGW i AccessGW
 
 Na AuthGW i AccessGW-u podesiti /etc/hosts za:
